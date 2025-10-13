@@ -108,6 +108,8 @@
               href="#vib_rate">Inference Time<br>Pitch Control</a></li>
           <li class="nav-item mx-0 mx-lg-2"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
             href="#timbre_tech">Timbre Technique<br>Conversion</a></li>
+            <li class="nav-item mx-0 mx-lg-2"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+            href="#others">Others</a></li>
         </ul>
       </div>
     </div>
@@ -419,9 +421,19 @@
           </script>
         </table>
       </div>
+    </div>
+  </section>
+
+  <section class="page-section bg-success text-white mb-0" id="others">
+    <div class="container" style="max-width: 1400px;">
+      <div class="text-center">
+        <h2 class="page-section-heading d-inline-block">
+          Other experiments
+        </h2>
+      </div>
 
       <div class="divider-custom divider-light lead text-center">
-          <br>Pitch & Timbre Joint Conversion
+          <br>Pitch & Timbre Joint Control
       </div>
 
       <div class="col-lg-12 ml-auto">
@@ -432,8 +444,23 @@
             document.write(createTableHead(header))
           </script>
           <script>
-            document.write(createTableBody(sample_list['Timbre_technique']['joint_conversion_ex1'], "220px", 5))
-            document.write(createTableBody(sample_list['Timbre_technique']['joint_conversion_ex2'], "220px", 5))
+            document.write(createTableBody(sample_list['Other']['joint_conversion_ex1'], "220px", 5))
+            document.write(createTableBody(sample_list['Other']['joint_conversion_ex2'], "220px", 5))
+          </script>
+        </table>
+      </div>
+      
+      <div class="divider-custom divider-light lead text-center">
+          <br>Vocal Fry Enforcement
+      </div>
+
+      <div class="col-lg-12 ml-auto">
+        <table class="table table-responsive align-content-center;"
+          style="background-color: rgba(255, 255, 255, 0.993); border-radius: 20px;text-align: center;">
+          
+          <script>
+            document.write(createTableBody(sample_list['Other']['vocal_fry_forcing_ex1'], "220px", 5))
+            document.write(createTableBody(sample_list['Other']['vocal_fry_forcing_ex2'], "220px", 5))
           </script>
         </table>
       </div>
