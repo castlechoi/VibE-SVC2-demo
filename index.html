@@ -98,17 +98,17 @@
         aria-label="Toggle navigation">Menu <i class="fas fa-bars"></i></button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item mx-0 mx-lg-2"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+          <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
               href="#abstract">Abstract</a></li>
-          <li class="nav-item mx-0 mx-lg-2"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+          <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
               href="#pitch_tech">Pitch Technique<br>Conversion</a></li>
-          <li class="nav-item mx-0 mx-lg-2"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+          <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
               href="#zs_pitch_tech">Zero-shot<br>Pitch Technique<br>Conversion</a></li>
-          <li class="nav-item mx-0 mx-lg-2"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+          <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
               href="#vib_rate">Inference Time<br>Pitch Control</a></li>
-          <li class="nav-item mx-0 mx-lg-2"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+          <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
             href="#timbre_tech">Timbre Technique<br>Conversion</a></li>
-            <li class="nav-item mx-0 mx-lg-2"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+            <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
             href="#others">Others</a></li>
         </ul>
       </div>
@@ -175,7 +175,7 @@
         <table class="table table-responsive align-content-center;" 
           style="background-color: rgba(255, 255, 255, 0.993); border-radius: 20px;text-align: center; ">
           <script>
-            var header = ["Source Spk (Female 6)","Reference Spk","Converted","",""]
+            var header = ["Source","Reference","Converted Samples","",""]
             document.write(createTableHead(header))
           </script>
           <script>
@@ -195,7 +195,7 @@
         <table class="table table-responsive align-content-center;"
           style="background-color: rgba(255, 255, 255, 0.993); border-radius: 20px;text-align: center;">
           <script>
-            var header = ["Source Spk (Female 6)","Reference Spk","Converted (Male 4)","",""]
+            var header = ["Source","Reference","Converted Samples","",""]
             document.write(createTableHead(header))
           </script>
           <!-- Female style-only conversion audio samples -->
@@ -235,7 +235,7 @@
         <table class="table table-responsive align-content-center;"
           style="background-color: rgba(255, 255, 255, 0.993); border-radius: 20px;text-align: center;">
           <script>
-            var header = ["Source Spk (Female 6)","Reference Spk (Female 4)","Converted","",""]
+            var header = ["Source","Reference","Converted Samples","",""]
             document.write(createTableHead(header))
           </script>
           <script>
@@ -246,19 +246,14 @@
           </script>
         </table>
       </div>
-      <!-- ============================== -->
-      <!-- Vibrato to straight conversion -->
-      <!-- ============================== -->
       <div class="divider-custom divider-light lead text-center">
           <br>Vibrato&rarr;Straight
       </div>
-
-
       <div class="col-lg-12 ml-auto">
         <table class="table table-responsive align-content-center;"
           style="background-color: rgba(255, 255, 255, 0.993); border-radius: 20px;text-align: center;">
           <script>
-            var header = ["Source Spk (Female 6)","Reference Spk (Female 4)","Converted","",""]
+            var header = ["Source","Reference","Converted Samples","",""]
             document.write(createTableHead(header))
           </script>
           <script>
@@ -295,7 +290,7 @@
         <table class="table table-responsive align-content-center;"
           style="background-color: rgba(255, 255, 255, 0.993); border-radius: 20px;text-align: center;">
           <script>
-            var header = ["Source","Converted","Controlled", "(Description: &alpha; and &beta; denote scaling factor of vibrato extent and rate)"]
+            var header = ["Source","Converted Sample","Controlled Samples", "(Description: &alpha; and &beta; denote scaling factor of vibrato extent and rate)"]
             document.write(createTableHead(header,3))
           </script>
           <script>
@@ -310,12 +305,11 @@
       <div class="divider-custom divider-light lead text-center">
           <br>MIDI Condition
       </div>
-
       <div class="col-lg-12 ml-auto">
         <table class="table table-responsive align-content-center;"
           style="background-color: rgba(255, 255, 255, 0.993); border-radius: 20px;text-align: center;">
           <script>
-            var header = ["Source","Converted","","",""]
+            var header = ["Source","Converted Samples","","",""]
             document.write(createTableHead(header))
           </script>
           <script>
@@ -329,12 +323,12 @@
 
     </div>
   </section>
+
   <!-- ========================== -->
   <!-- ========================== -->
   <!--   Timbre technique conversion  -->
   <!-- ========================== -->
   <!-- ========================== -->
-
   <section class="page-section bg-primary text-white mb-0" id="timbre_tech">
     <div class="container" style="max-width: 1400px;">
       <div class="text-center">
@@ -350,7 +344,7 @@
         <table class="table table-responsive align-content-center;"
           style="background-color: rgba(255, 255, 255, 0.993); border-radius: 20px;text-align: center;">
           <script>
-            var header = ["Source Spk","Target Spk","Converted","",""]
+            var header = ["Source","Target Spk","Converted Samples","",""]
             document.write(createTableHead(header))
           </script>
           <script>
@@ -365,12 +359,11 @@
       <div class="divider-custom divider-light lead text-center">
           <br>Any&rarr;Belt
       </div>
-
       <div class="col-lg-12 ml-auto">
         <table class="table table-responsive align-content-center;"
           style="background-color: rgba(255, 255, 255, 0.993); border-radius: 20px;text-align: center;">
           <script>
-            var header = ["Source Spk","Target Spk","Converted","",""]
+            var header = ["Source","Target Spk","Converted Samples","",""]
             document.write(createTableHead(header))
           </script>
           <script>
@@ -382,16 +375,14 @@
       </div>
 
       <!-- Any-to-Breathy -->
-
       <div class="divider-custom divider-light lead text-center">
           <br>Any&rarr;Breathy
       </div>
-
       <div class="col-lg-12 ml-auto">
         <table class="table table-responsive align-content-center;"
           style="background-color: rgba(255, 255, 255, 0.993); border-radius: 20px;text-align: center;">
           <script>
-            var header = ["Source Spk","Target Spk","Converted","",""]
+            var header = ["Source","Target Spk","Converted Samples","",""]
             document.write(createTableHead(header))
           </script>
           <script>
@@ -406,12 +397,11 @@
       <div class="divider-custom divider-light lead text-center">
           <br>Any&rarr;Vocal Fry
       </div>
-
       <div class="col-lg-12 ml-auto">
         <table class="table table-responsive align-content-center;"
           style="background-color: rgba(255, 255, 255, 0.993); border-radius: 20px;text-align: center;">
           <script>
-            var header = ["Source Spk","Target Spk","Converted","",""]
+            var header = ["Source","Target Spk","Converted Samples","",""]
             document.write(createTableHead(header))
           </script>
           <script>
@@ -435,12 +425,11 @@
       <div class="divider-custom divider-light lead text-center">
           <br>Pitch & Timbre Joint Control
       </div>
-
       <div class="col-lg-12 ml-auto">
         <table class="table table-responsive align-content-center;"
           style="background-color: rgba(255, 255, 255, 0.993); border-radius: 20px;text-align: center;">
           <script>
-            var header = ["Source Spk","Target Spk","Converted","",""]
+            var header = ["Source","Target Spk","Converted Samples<br>(Timbre Tech & Pitch Tech)","",""]
             document.write(createTableHead(header))
           </script>
           <script>
@@ -457,7 +446,10 @@
       <div class="col-lg-12 ml-auto">
         <table class="table table-responsive align-content-center;"
           style="background-color: rgba(255, 255, 255, 0.993); border-radius: 20px;text-align: center;">
-          
+          <script>
+            var header = ["Source","Target Spk","Converted Samples","",""]
+            document.write(createTableHead(header))
+          </script>
           <script>
             document.write(createTableBody(sample_list['Other']['vocal_fry_forcing_ex1'], "220px", 5))
             document.write(createTableBody(sample_list['Other']['vocal_fry_forcing_ex2'], "220px", 5))
