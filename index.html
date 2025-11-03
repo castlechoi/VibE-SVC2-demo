@@ -145,14 +145,13 @@
       <!-- Portfolio Grid Items-->
       <div class="row justify-content-center">
         <div class="col-lg-12 ml-auto">
-          <p class="pre-wrap lead" style="word-wrap: normal;">Singing technique is a crucial aspect of expressive singing voice. In this paper, we introduce VibE-SVC II, a singing voice conversion framework that offers expanded and disentangled control over complex singing techniques. For pitch techniques, we introduce an energy style converter that models the volume modulations associated with vibrato, significantly improving conversion performance. Our framework also enables vibrato rate control at inference time and supports a novel method for MIDI-based pitch conditioning without using MIDI during training. For timbre techniques, we extend the model to handle a variety of timbre techniques. To address the unique challenges of vocal fry which is characterized by subharmonics, we propose a novel Subharmonic Correction (SHC) algorithm that refines the F0 contour for more natural timbre conversion. Through comprehensive objective and subjective evaluations, we demonstrate that VibE-SVC II provides fine-grained, independent control over a wide range of singing techniques, outperforming existing methods.</p>
+          <p class="pre-wrap lead" style="word-wrap: normal;">Singing technique is a crucial aspect for natural and expressive singing voice. Singers utilize singing techniques to convey the feeling or emotion of the songs. Several works have been proposed to control singing technique to make the singing voice more expressive. Recently, VibE-SVC successfully controls vibrato by predicting high-frequency F0 contour. In this paper, we introduce a singing voice conversion framework, called VibE-SVC II, to improve singing technique conversion performance and controllability. The model offers control over two types of singing techniques: a pitch technique and a timbre technique. For the pitch technique, we introduce an energy style converter to address remaining style information of the target technique in the energy contour. In addition, we propose a zero-shot pitch technique conversion model, called ZS-VibE-SVC II, which mimics the pitch technique of reference audio. To improve controllability of the model, we propose vibrato rate control that is independent control of vibrato extent, which is unavailable in VibE-SVC. For the timbre technique, we extend the model to handle a variety of timbre techniques. We empirically found that the model struggles with converting vocal fry sample into other styles due to its subharmonic characteristics. To address this, we propose a novel Subharmonic Correction algorithm to refine the F0 contour for more natural timbre conversion. Through comprehensive objective and subjective evaluations, we demonstrate that VibE-SVC II provides fine-grained, independent control over two types of singing techniques, outperforming existing methods.</p>
         </div>
 
         <div class="text-center">
           <br>
           <br>
-          <img width="40%" src="./assets/figure/fig_svc.png">
-          <img width="50%" src="./assets/figure/fig_converter.png">
+          <img width="80%" src="./figure/vibesvcII.png">
         </div>
       </div>
     </div>
@@ -302,24 +301,6 @@
         </table>
       </div>
       
-      <div class="divider-custom divider-light lead text-center">
-          <br>MIDI Condition
-      </div>
-      <div class="col-lg-12 ml-auto">
-        <table class="table table-responsive align-content-center;"
-          style="background-color: rgba(255, 255, 255, 0.993); border-radius: 20px;text-align: center;">
-          <script>
-            var header = ["Source","Converted Samples","","",""]
-            document.write(createTableHead(header))
-          </script>
-          <script>
-            // Female examples
-            document.write(createTableBody(sample_list['MIDI_condition']['midi_cond_ex1'], "220px", 5))
-            // Male examples
-            document.write(createTableBody(sample_list['MIDI_condition']['midi_cond_ex2'], "220px", 5))
-          </script>
-        </table>
-      </div>
 
     </div>
   </section>
