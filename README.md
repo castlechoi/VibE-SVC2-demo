@@ -1,2 +1,2 @@
-# VibE-SVC-II-demo
-The demo page of VibE-SVC II
+# VibE-SVC2-demo
+The demo page of VibE-SVC 2
