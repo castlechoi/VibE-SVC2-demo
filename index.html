@@ -22,7 +22,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>ViBE-SVC II Demo</title>
+  <title>ViBE-SVC2 Demo</title>
   <!-- Font Awesome icons (free version)-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
     crossorigin="anonymous"></script>
@@ -92,7 +92,7 @@
 
 <body id="page-top">
   <nav class="navbar navbar-expand-lg bg-info fixed-top" id="mainNav">
-    <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top">ViBE-SVC II</a>
+    <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top">ViBE-SVC2</a>
       <button class="navbar-toggler navbar-toggler-right font-weight-bold bg-primary text-white rounded" type="button"
         data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
         aria-label="Toggle navigation">Menu <i class="fas fa-bars"></i></button>
@@ -119,7 +119,7 @@
     <div class="container d-flex align-items-center flex-column">
       <!-- Masthead Heading-->
       <h1 class="masthead-heading mb-0 text-center">
-        VibE-SVC II: Vibrato Expression Control for Singing Voice Conversion with Improving Inference Time Control
+        Vibrato Expression Control for Singing Voice Conversion with Improving Independent Control
       </h1>
       <!-- Masthead Subheading-->
       <p class="pre-wrap lead">&nbsp;</p>
@@ -145,13 +145,13 @@
       <!-- Portfolio Grid Items-->
       <div class="row justify-content-center">
         <div class="col-lg-12 ml-auto">
-          <p class="pre-wrap lead" style="word-wrap: normal;">Singing technique is a crucial aspect for natural and expressive singing voice. Singers utilize singing techniques to convey the feeling or emotion of the songs. Several works have been proposed to control singing technique to make the singing voice more expressive. Recently, VibE-SVC successfully controls vibrato by predicting high-frequency F0 contour. In this paper, we introduce a singing voice conversion framework, called VibE-SVC II, to improve singing technique conversion performance and controllability. The model offers control over two types of singing techniques: a pitch technique and a timbre technique. For the pitch technique, we introduce an energy style converter to address remaining style information of the target technique in the energy contour. In addition, we propose a zero-shot pitch technique conversion model, called ZS-VibE-SVC II, which mimics the pitch technique of reference audio. To improve controllability of the model, we propose vibrato rate control that is independent control of vibrato extent, which is unavailable in VibE-SVC. For the timbre technique, we extend the model to handle a variety of timbre techniques. We empirically found that the model struggles with converting vocal fry sample into other styles due to its subharmonic characteristics. To address this, we propose a novel Subharmonic Correction algorithm to refine the F0 contour for more natural timbre conversion. Through comprehensive objective and subjective evaluations, we demonstrate that VibE-SVC II provides fine-grained, independent control over two types of singing techniques, outperforming existing methods.</p>
+          <p class="pre-wrap lead" style="word-wrap: normal;">Singing style is a crucial aspect for a natural and expressive singing voice. Singers utilize singing styles to convey the feeling or emotion of the songs. Several works have been proposed to control singing style to make the singing voice more expressive. Recently, VibE-SVC successfully controls vibrato by predicting high-frequency F0 contour. In this paper, we introduce a singing voice conversion framework, called VibE-SVC2, to improve singing style conversion performance and controllability. The model offers control over two types of singing styles: a pitch style and a timbre style. For the pitch style, we introduce an energy style converter to address remaining style information of the target style in the energy contour. In addition, we propose a zero-shot pitch style converter, called ZSP, which mimics the pitch style of reference audio. To improve controllability of the model, we propose vibrato rate control that is an independent control of vibrato extent, which is unavailable in VibE-SVC. For the timbre style, we extend the model to handle a variety of timbre styles. We empirically found that the model struggles with converting vocal fry samples into other styles due to its subharmonic characteristics. To address this, we propose a novel Subharmonic Correction algorithm to refine the F0 contour for more natural timbre conversion. Through comprehensive objective and subjective evaluations, we demonstrate that VibE-SVC2 provides fine-grained, independent control over two types of singing styles, outperforming existing methods.</p>
         </div>
 
         <div class="text-center">
           <br>
           <br>
-          <img width="80%" src="./figure/vibesvcII.png">
+          <img width="80%" src="./figure/main.png">
         </div>
       </div>
     </div>
@@ -289,7 +289,7 @@
         <table class="table table-responsive align-content-center;"
           style="background-color: rgba(255, 255, 255, 0.993); border-radius: 20px;text-align: center;">
           <script>
-            var header = ["Source","Converted Sample","Controlled Samples", "(Description: &alpha; and &beta; denote scaling factor of vibrato extent and rate)"]
+            var header = ["Source","Converted Sample","Controlled Samples", "(&alpha; : Vibrato extent scaling factor, &beta; : Vibrato rate scaling factor)"]
             document.write(createTableHead(header,3))
           </script>
           <script>
